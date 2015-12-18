@@ -9,12 +9,12 @@ echo 'CreatePackageTestsInput( "'$1'", "testpackages.in", "dev/log/testpackages1
 chmod 777 testpackages.in; ./testpackages.in; rm testpackages.in
 rm wsp.g
 
-echo 'SetAssertionLevel( 2 ); Read( "testpackage.g" ); SaveWorkspace( "wsp.g" );' | exec $TESTGAPauto
+echo 'SetAssertionLevel( 2 ); Read( "testpackage.g" ); SaveWorkspace( "wsp.g" );' | $TESTGAPauto
 echo 'CreatePackageTestsInput( "'$1'", "testpackages.in", "dev/log/testpackagesA", "'$TESTGAPauto' -L wsp.g", "auto" );' | $TESTGAPauto -L wsp.g
 chmod 777 testpackages.in; ./testpackages.in; rm testpackages.in
 rm wsp.g
 
-echo 'SetAssertionLevel( 2 ); Read( "testpackage.g" ); SaveWorkspace( "wsp.g" );' | exec $TESTGAP
-echo 'CreatePackageTestsInput( "'$1'", "testpackages.in", "dev/log/testpackages2", "'$TESTGAP' -L wsp.g", "true" );' | exec $TESTGAP -L wsp.g
+echo 'SetAssertionLevel( 2 ); Read( "testpackage.g" ); SaveWorkspace( "wsp.g" );' | $TESTGAP
+echo 'CreatePackageTestsInput( "'$1'", "testpackages.in", "dev/log/testpackages2", "'$TESTGAP' -L wsp.g", "true" );' | $TESTGAP -L wsp.g
 chmod 777 testpackages.in; ./testpackages.in; rm testpackages.in
 rm wsp.g
