@@ -14,5 +14,5 @@ before_install:
 
 script:
     - docker version
-    - docker run -t gapsystem/gap-docker sh -c 'cd /home/gap/inst/gap4r7/; sudo wget https://raw.githubusercontent.com/gap-system/pkg-tests/master/testpackage.g; sudo wget https://raw.githubusercontent.com/gap-system/pkg-tests/master/testpackage.sh; sudo chmod u+x testpackage.sh ; sudo ./testpackage.sh ${PKG_NAME}; cat dev/log*' 
+    - docker run -t gapsystem/gap-docker sh -c \'"cd /home/gap/inst/gap4r7/; sudo wget https://raw.githubusercontent.com/gap-system/pkg-tests/master/testpackage.g; sudo wget https://raw.githubusercontent.com/gap-system/pkg-tests/master/testpackage.sh; sudo chmod u+x testpackage.sh ; sudo ./testpackage.sh ${PKG_NAME}; cat dev/log*"\' 
 
