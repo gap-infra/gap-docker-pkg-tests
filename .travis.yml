@@ -68,4 +68,4 @@ before_install:
 
 script:
     - docker version
-    - docker run -t gapsystem/gap-docker /bin/sh -c "cd /home/gap/inst/gap4r7/; sudo wget https://raw.githubusercontent.com/gap-system/pkg-tests/master/testpackage.g; sudo wget https://raw.githubusercontent.com/gap-system/pkg-tests/master/testpackage.sh; sudo chmod u+x testpackage.sh ; sudo ./testpackage.sh ${PKG_NAME}; cat dev/log/*; if [ \`cat dev/log/*.${PKG_NAME} | grep -c '#I  No errors detected while testing package'\` != '3' ]; then exit 1; fi;"
+    - docker run -t gapsystem/gap-docker /bin/sh -c "cd /home/gap/inst/gap4r7/; sudo wget https://raw.githubusercontent.com/gap-system/gap-docker-pkg-tests/master/testpackage.g; sudo wget https://raw.githubusercontent.com/gap-system/gap-docker-pkg-tests/master/testpackage.sh; sudo chmod u+x testpackage.sh ; sudo ./testpackage.sh ${PKG_NAME}; cat dev/log/*; if [ \`cat dev/log/*.${PKG_NAME} | grep -c '#I  No errors detected while testing package'\` != '3' ]; then exit 1; fi;"
