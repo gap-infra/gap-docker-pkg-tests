@@ -45,6 +45,7 @@ env:
 - PKG_NAME=loops
 - PKG_NAME=modisom
 - PKG_NAME=normalizinterface
+- PKG_NAME=nq
 - PKG_NAME=numericalsgps
 - PKG_NAME=openmath
 - PKG_NAME=orb
