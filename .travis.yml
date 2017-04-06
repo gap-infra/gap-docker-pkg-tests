@@ -43,6 +43,7 @@ env:
 - PKG_NAME=laguna
 - PKG_NAME=linboxing
 - PKG_NAME=loops
+- PKG_NAME=lpres
 - PKG_NAME=modisom
 - PKG_NAME=normalizinterface
 - PKG_NAME=nq
@@ -66,6 +67,7 @@ env:
 - PKG_NAME=smallsemi
 - PKG_NAME=spinsym
 - PKG_NAME=tomlib
+- PKG_NAME=toric
 - PKG_NAME=unipot
 - PKG_NAME=unitlib
 - PKG_NAME=utils
