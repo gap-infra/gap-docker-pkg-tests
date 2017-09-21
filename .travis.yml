@@ -27,8 +27,8 @@ env:
 - PKG_NAME=fplsa
 - PKG_NAME=fr
 - PKG_NAME=gbnp
-- PKG_NAME=gpd
 - PKG_NAME=grape
+- PKG_NAME=groupoids
 - PKG_NAME=guarana
 - PKG_NAME=guava
 - PKG_NAME=hap
