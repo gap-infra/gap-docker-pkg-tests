@@ -39,6 +39,7 @@ env:
     - PKG_NAME=fplsa
     - PKG_NAME=fr
     - PKG_NAME=gbnp
+    - PKG_NAME=genss
     - PKG_NAME=grape
     - PKG_NAME=groupoids
     - PKG_NAME=guarana
@@ -75,6 +76,7 @@ env:
     - PKG_NAME=resclasses
     - PKG_NAME=scscp
     - PKG_NAME=semigroups
+    - PKG_NAME=sgpviz
     - PKG_NAME=simpcomp
     - PKG_NAME=smallsemi
     - PKG_NAME=spinsym
