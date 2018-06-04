@@ -6,26 +6,31 @@ env:
   global:
     # for the latest public release
     - GAPCONTAINER="gapsystem/gap-docker"
-    - GAPDIRNAME="gap4r8"
-    # for the tests of the stable-4.8 branch
+    - GAPDIRNAME="gap-4.9.1"
+    # for the tests of the stable-4.X branch
     # - GAPCONTAINER="gapsystem/gap-docker-stable"
-    # - GAPDIRNAME="gap-stable-4.8"
+    # - GAPDIRNAME="gap-stable-4.X"
     # for the tests of the master branch
     # - GAPCONTAINER="gapsystem/gap-docker-master"
     # - GAPDIRNAME="gap-master"
 
   matrix:
     - PKG_NAME=ace
+    - PKG_NAME=aclib
     - PKG_NAME=alnuth
     - PKG_NAME=anupq
     - PKG_NAME=atlasrep
     - PKG_NAME=automgrp
+    - PKG_NAME=autpgrp
     - PKG_NAME=browse
+    - PKG_NAME=carat
     - PKG_NAME=circle
     - PKG_NAME=cohomolo
     - PKG_NAME=congruence
     - PKG_NAME=crime
     - PKG_NAME=crisp
+    - PKG_NAME=cryst
+    - PKG_NAME=crystcat
     - PKG_NAME=ctbllib
     - PKG_NAME=cubefree
     - PKG_NAME=cvec
@@ -35,6 +40,7 @@ env:
     - PKG_NAME=fga
     - PKG_NAME=fining
     - PKG_NAME=float
+    - PKG_NAME=format
     - PKG_NAME=forms
     - PKG_NAME=fplsa
     - PKG_NAME=fr
@@ -42,11 +48,11 @@ env:
     - PKG_NAME=genss
     - PKG_NAME=grape
     - PKG_NAME=groupoids
+    - PKG_NAME=grpconst
     - PKG_NAME=guarana
     - PKG_NAME=guava
     - PKG_NAME=hap
     - PKG_NAME=hapcryst
-    - PKG_NAME=happrime
     - PKG_NAME=help
     - PKG_NAME=idrel
     - PKG_NAME=intpic
@@ -54,6 +60,7 @@ env:
     - PKG_NAME=json
     - PKG_NAME=kan
     - PKG_NAME=laguna
+    - PKG_NAME=liealgdb
     - PKG_NAME=linboxing
     - PKG_NAME=loops
     - PKG_NAME=lpres
@@ -68,6 +75,7 @@ env:
     - PKG_NAME=polenta
     - PKG_NAME=polycyclic
     - PKG_NAME=polymaking
+    - PKG_NAME=primgrp
     - PKG_NAME=profiling
     - PKG_NAME=qaos
     - PKG_NAME=qpa
@@ -76,9 +84,12 @@ env:
     - PKG_NAME=resclasses
     - PKG_NAME=scscp
     - PKG_NAME=semigroups
+    - PKG_NAME=sglppow
     - PKG_NAME=sgpviz
     - PKG_NAME=simpcomp
+    - PKG_NAME=smallgrp
     - PKG_NAME=smallsemi
+    - PKG_NAME=sophus
     - PKG_NAME=spinsym
     - PKG_NAME=tomlib
     - PKG_NAME=toric
@@ -88,6 +99,7 @@ env:
     - PKG_NAME=wedderga
     - PKG_NAME=xmod
     - PKG_NAME=xmodalg
+    - PKG_NAME=zeromqinterface
 
 services:
   - docker
