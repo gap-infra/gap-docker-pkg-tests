@@ -6,7 +6,7 @@ env:
   global:
     # for the latest public release
     - GAPCONTAINER="gapsystem/gap-docker"
-    - GAPDIRNAME="gap-4.9.1"
+    - GAPDIRNAME="gap-4.9.2"
     # for the tests of the stable-4.X branch
     # - GAPCONTAINER="gapsystem/gap-docker-stable"
     # - GAPDIRNAME="gap-stable-4.X"
@@ -22,13 +22,13 @@ env:
     - PKG_NAME=atlasrep
     - PKG_NAME=automgrp
     - PKG_NAME=autpgrp
-    - PKG_NAME=browse
     - PKG_NAME=carat
     - PKG_NAME=circle
     - PKG_NAME=cohomolo
     - PKG_NAME=congruence
     - PKG_NAME=crime
     - PKG_NAME=crisp
+    - PKG_NAME=crypting
     - PKG_NAME=cryst
     - PKG_NAME=crystcat
     - PKG_NAME=ctbllib
@@ -58,6 +58,7 @@ env:
     - PKG_NAME=intpic
     - PKG_NAME=irredsol
     - PKG_NAME=json
+    - PKG_NAME=jupyterkernel
     - PKG_NAME=kan
     - PKG_NAME=laguna
     - PKG_NAME=liealgdb
@@ -96,6 +97,7 @@ env:
     - PKG_NAME=unipot
     - PKG_NAME=unitlib
     - PKG_NAME=utils
+    - PKG_NAME=uuid
     - PKG_NAME=wedderga
     - PKG_NAME=xmod
     - PKG_NAME=xmodalg
