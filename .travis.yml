@@ -6,7 +6,7 @@ env:
   global:
     # for the latest public release
     - GAPCONTAINER="gapsystem/gap-docker"
-    - GAPDIRNAME="gap-4.9.2"
+    - GAPDIRNAME="gap-4.9.3"
     # for the tests of the stable-4.X branch
     # - GAPCONTAINER="gapsystem/gap-docker-stable"
     # - GAPDIRNAME="gap-stable-4.X"
@@ -33,7 +33,10 @@ env:
     - PKG_NAME=crystcat
     - PKG_NAME=ctbllib
     - PKG_NAME=cubefree
+    - PKG_NAME=curlinterface
     - PKG_NAME=cvec
+    - PKG_NAME=datastructures
+    - PKG_NAME=deepthought
     - PKG_NAME=digraphs
     - PKG_NAME=example
     - PKG_NAME=factint
@@ -56,6 +59,7 @@ env:
     - PKG_NAME=help
     - PKG_NAME=idrel
     - PKG_NAME=intpic
+    - PKG_NAME=io
     - PKG_NAME=irredsol
     - PKG_NAME=json
     - PKG_NAME=jupyterkernel
@@ -94,6 +98,7 @@ env:
     - PKG_NAME=spinsym
     - PKG_NAME=tomlib
     - PKG_NAME=toric
+    - PKG_NAME=transgrp
     - PKG_NAME=unipot
     - PKG_NAME=unitlib
     - PKG_NAME=utils
