@@ -6,7 +6,7 @@ env:
   global:
     # for the latest public release
     - GAPCONTAINER="gapsystem/gap-docker"
-    - GAPDIRNAME="gap-4.9.3"
+    - GAPDIRNAME="gap-4.10.0"
     # for the tests of the stable-4.X branch
     # - GAPCONTAINER="gapsystem/gap-docker-stable"
     # - GAPDIRNAME="gap-stable-4.X"
@@ -20,6 +20,8 @@ env:
     - PKG_NAME=alnuth
     - PKG_NAME=anupq
     - PKG_NAME=atlasrep
+    - PKG_NAME=autodoc
+    - PKG_NAME=automata
     - PKG_NAME=automgrp
     - PKG_NAME=autpgrp
     - PKG_NAME=carat
@@ -47,6 +49,7 @@ env:
     - PKG_NAME=forms
     - PKG_NAME=fplsa
     - PKG_NAME=fr
+    - PKG_NAME=francy
     - PKG_NAME=gbnp
     - PKG_NAME=genss
     - PKG_NAME=grape
@@ -56,6 +59,7 @@ env:
     - PKG_NAME=guava
     - PKG_NAME=hap
     - PKG_NAME=hapcryst
+    - PKG_NAME=hecke
     - PKG_NAME=help
     - PKG_NAME=idrel
     - PKG_NAME=intpic
@@ -63,12 +67,16 @@ env:
     - PKG_NAME=irredsol
     - PKG_NAME=json
     - PKG_NAME=jupyterkernel
+    - PKG_NAME=jupyterviz
     - PKG_NAME=kan
+    - PKG_NAME=kbmag
     - PKG_NAME=laguna
     - PKG_NAME=liealgdb
-    - PKG_NAME=linboxing
+    - PKG_NAME=liepring
     - PKG_NAME=loops
     - PKG_NAME=lpres
+    - PKG_NAME=mapclass
+    - PKG_NAME=matgrp
     - PKG_NAME=modisom
     - PKG_NAME=normalizinterface
     - PKG_NAME=nq
@@ -86,14 +94,17 @@ env:
     - PKG_NAME=qpa
     - PKG_NAME=radiroot
     - PKG_NAME=rcwa
+    - PKG_NAME=recog
     - PKG_NAME=resclasses
     - PKG_NAME=scscp
     - PKG_NAME=semigroups
     - PKG_NAME=sglppow
     - PKG_NAME=sgpviz
     - PKG_NAME=simpcomp
+    - PKG_NAME=singular
     - PKG_NAME=smallgrp
     - PKG_NAME=smallsemi
+    - PKG_NAME=sonata
     - PKG_NAME=sophus
     - PKG_NAME=spinsym
     - PKG_NAME=tomlib
