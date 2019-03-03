@@ -6,7 +6,7 @@ env:
   global:
     # for the latest public release
     - GAPCONTAINER="gapsystem/gap-docker"
-    - GAPDIRNAME="gap-4.10.0"
+    - GAPDIRNAME="gap-4.10.1"
     # for the tests of the stable-4.X branch
     # - GAPCONTAINER="gapsystem/gap-docker-stable"
     # - GAPDIRNAME="gap-stable-4.X"
@@ -75,6 +75,7 @@ env:
     - PKG_NAME=liepring
     - PKG_NAME=loops
     - PKG_NAME=lpres
+    - PKG_NAME=majoranaalgebras
     - PKG_NAME=mapclass
     - PKG_NAME=matgrp
     - PKG_NAME=modisom
@@ -83,6 +84,7 @@ env:
     - PKG_NAME=numericalsgps
     - PKG_NAME=openmath
     - PKG_NAME=orb
+    - PKG_NAME=packagemanager
     - PKG_NAME=patternclass
     - PKG_NAME=permut
     - PKG_NAME=polenta
@@ -94,7 +96,9 @@ env:
     - PKG_NAME=qpa
     - PKG_NAME=radiroot
     - PKG_NAME=rcwa
+    - PKG_NAME=rds
     - PKG_NAME=recog
+    - PKG_NAME=repsn
     - PKG_NAME=resclasses
     - PKG_NAME=scscp
     - PKG_NAME=semigroups
@@ -107,6 +111,7 @@ env:
     - PKG_NAME=sonata
     - PKG_NAME=sophus
     - PKG_NAME=spinsym
+    - PKG_NAME=thelma
     - PKG_NAME=tomlib
     - PKG_NAME=toric
     - PKG_NAME=transgrp
@@ -114,9 +119,11 @@ env:
     - PKG_NAME=unitlib
     - PKG_NAME=utils
     - PKG_NAME=uuid
+    - PKG_NAME=walrus
     - PKG_NAME=wedderga
     - PKG_NAME=xmod
     - PKG_NAME=xmodalg
+    - PKG_NAME=yangbaxter
     - PKG_NAME=zeromqinterface
 
 services:
