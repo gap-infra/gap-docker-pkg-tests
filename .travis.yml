@@ -39,6 +39,7 @@ env:
     - PKG_NAME=cvec
     - PKG_NAME=datastructures
     - PKG_NAME=deepthought
+    - PKG_NAME=design
     - PKG_NAME=digraphs
     - PKG_NAME=example
     - PKG_NAME=factint
@@ -73,12 +74,14 @@ env:
     - PKG_NAME=laguna
     - PKG_NAME=liealgdb
     - PKG_NAME=liepring
+    - PKG_NAME=liering
     - PKG_NAME=loops
     - PKG_NAME=lpres
     - PKG_NAME=majoranaalgebras
     - PKG_NAME=mapclass
     - PKG_NAME=matgrp
     - PKG_NAME=modisom
+    - PKG_NAME=monoidalcategories
     - PKG_NAME=normalizinterface
     - PKG_NAME=nq
     - PKG_NAME=numericalsgps
@@ -92,7 +95,6 @@ env:
     - PKG_NAME=polymaking
     - PKG_NAME=primgrp
     - PKG_NAME=profiling
-    - PKG_NAME=qaos
     - PKG_NAME=qpa
     - PKG_NAME=radiroot
     - PKG_NAME=rcwa
@@ -106,6 +108,7 @@ env:
     - PKG_NAME=sgpviz
     - PKG_NAME=simpcomp
     - PKG_NAME=singular
+    - PKG_NAME=sla
     - PKG_NAME=smallgrp
     - PKG_NAME=smallsemi
     - PKG_NAME=sonata
