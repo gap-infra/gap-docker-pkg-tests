@@ -6,7 +6,7 @@ env:
   global:
     # for the latest public release
     - GAPCONTAINER="gapsystem/gap-docker"
-    - GAPDIRNAME="gap-4.10.1"
+    - GAPDIRNAME="gap-4.10.2"
     # for the tests of the stable-4.X branch
     # - GAPCONTAINER="gapsystem/gap-docker-stable"
     # - GAPDIRNAME="gap-stable-4.X"
