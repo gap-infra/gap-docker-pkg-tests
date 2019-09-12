@@ -1,5 +1,3 @@
-sudo: required
-
 language: c
 
 branches:
@@ -8,17 +6,9 @@ branches:
 
 env:
   global:
-    # for the latest public release
     - GAPCONTAINER="gapsystem/gap-docker"
-    - GAPDIRNAME="gap-4.10.2"
-    # for the tests of the stable-4.X branch
-    # - GAPCONTAINER="gapsystem/gap-docker-stable"
-    # - GAPDIRNAME="gap-stable-4.X"
-    # for the tests of the master branch
-    # - GAPCONTAINER="gapsystem/gap-docker-master"
-    # - GAPDIRNAME="gap-master"
 
-  matrix:
+matrix:
     - PKG_NAME=ace
     - PKG_NAME=aclib
     - PKG_NAME=alnuth
@@ -137,8 +127,8 @@ services:
   - docker
 
 before_install:
-- docker pull ${GAPCONTAINER}
+  - docker pull ${GAPCONTAINER}
 
 script:
-    - docker version
-    - docker run -v $PWD:/home/gap/travis/ ${GAPCONTAINER} /bin/sh -c "GAPDIRNAME=${GAPDIRNAME} PKG_NAME=${PKG_NAME} TERM=xterm LANG=en_GB.UTF-8 /home/gap/travis/ci.sh"
+  - docker version
+  - docker run -v $PWD:/home/gap/travis/ ${GAPCONTAINER} /bin/sh -c "PKG_NAME=${PKG_NAME} TERM=xterm LANG=en_GB.UTF-8 /home/gap/travis/ci.sh"
