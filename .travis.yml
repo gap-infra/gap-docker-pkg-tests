@@ -11,6 +11,7 @@ env:
   matrix:
     - PKG_NAME=ace
     - PKG_NAME=aclib
+    - PKG_NAME=agt
     - PKG_NAME=alnuth
     - PKG_NAME=anupq
     - PKG_NAME=atlasrep
@@ -18,7 +19,8 @@ env:
     - PKG_NAME=automata
     - PKG_NAME=automgrp
     - PKG_NAME=autpgrp
-    - PKG_NAME=carat
+    - PKG_NAME=caratinterface
+    - PKG_NAME=cddinterface
     - PKG_NAME=circle
     - PKG_NAME=cohomolo
     - PKG_NAME=congruence
@@ -34,9 +36,12 @@ env:
     - PKG_NAME=datastructures
     - PKG_NAME=deepthought
     - PKG_NAME=design
+    - PKG_NAME=difsets
     - PKG_NAME=digraphs
+    - PKG_NAME=edim
     - PKG_NAME=example
     - PKG_NAME=factint
+    - PKG_NAME=ferret
     - PKG_NAME=fga
     - PKG_NAME=fining
     - PKG_NAME=float
@@ -45,6 +50,7 @@ env:
     - PKG_NAME=fplsa
     - PKG_NAME=fr
     - PKG_NAME=francy
+    - PKG_NAME=fwtree
     - PKG_NAME=gbnp
     - PKG_NAME=genss
     - PKG_NAME=grape
@@ -57,6 +63,7 @@ env:
     - PKG_NAME=hecke
     - PKG_NAME=help
     - PKG_NAME=idrel
+    - PKG_NAME=images
     - PKG_NAME=intpic
     - PKG_NAME=io
     - PKG_NAME=irredsol
@@ -76,6 +83,9 @@ env:
     - PKG_NAME=matgrp
     - PKG_NAME=modisom
     - PKG_NAME=monoidalcategories
+    - PKG_NAME=nconvex
+    - PKG_NAME=nilmat
+    - PKG_NAME=nock
     - PKG_NAME=normalizinterface
     - PKG_NAME=nq
     - PKG_NAME=numericalsgps
@@ -90,10 +100,12 @@ env:
     - PKG_NAME=primgrp
     - PKG_NAME=profiling
     - PKG_NAME=qpa
+    - PKG_NAME=quagroup
     - PKG_NAME=radiroot
     - PKG_NAME=rcwa
     - PKG_NAME=rds
     - PKG_NAME=recog
+    - PKG_NAME=repndecomp
     - PKG_NAME=repsn
     - PKG_NAME=resclasses
     - PKG_NAME=scscp
@@ -108,6 +120,7 @@ env:
     - PKG_NAME=sonata
     - PKG_NAME=sophus
     - PKG_NAME=spinsym
+    - PKG_NAME=symbcompcc
     - PKG_NAME=thelma
     - PKG_NAME=tomlib
     - PKG_NAME=toric
